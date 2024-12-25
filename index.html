@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Webpage</title>
+    <style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 0px 20px;
+    border: 5px solid rgb(180, 171, 126);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block; 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+header {
+    background-color: #bc3985;
+    color: white;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    background-color: #db7413;
+    color: rgb(248, 248, 248);
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    z-index: 2;
+}
+nav a {
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+    display: inline-block; 
+}
+
+nav ul li {
+    padding: 10px 0; 
+    cursor: pointer;
+    color: white;
+}
+nav ul li a:hover {
+    color: yellow; 
+    cursor: wait;
+    display: block;
+}
+.element{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#skills-element {
+    padding: auto;
+    border: 1px solid black;
+    background-color: rgb(254, 255, 254); 
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+nav ul li:last-child a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+div.container > :first-child {
+    border: 1px solid blue;
+}
+table tr:nth-child(even) {
+    background-color: #03251a;
+}
+
+a[href]{
+    color: rgb(0, 0, 0);
+    background-color: rgb(56, 205, 218);
+}
+i  input[type="text"], input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+        
+</style>
+
+    </head>
+<body>
+
+    <header>
+        <h1>Welcome to My<em> Personal Webpage! </em></h1>
+        <p>Hi, I'm mahi lohiya. This is where you can learn more about me and my work.</p>
+    </header>
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section id="about-me">
+        <h2>About Me</h2>
+        <p style="color:rgb(124, 124, 181);">I'm passionate about technology, programming, and learning new things. I love to code and solve complex problems. In my free time, I enjoy gardening, fitness, and arts and crafts.</p>
+        <img src="https://www.womenintech.org/wp-content/uploads/2021/07/WIT-Logo-1.png" alt="Women in Tech Logo" style="max-width: 100%; height: auto;">
+
+
+        </section>
+        
+    <section id="contact" style="color: rgb(188, 225, 38)">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through the contact form below:</p>
+        
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+                <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+                <label for="subscribe">Subscribe to newsletter</label><br><br>
+                <button type="submit" value="Submit" ></button>
+            </fieldset>
+        </form>
+    </section>
+    <section id="skills" style="color: rgb(206, 43, 49)">
+        <h2>Skills</h2>
+        <div class="element" id="skills-element">
+            <p>with a solid background in <strong>Information Science and Engineering</strong>, I have honed a variety of technical and soft skills.</p>
+        </div>
+            
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java, C</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Data Analysis:</strong> Python (Pandas, NumPy), MATLAB</li>
+            </ul>
+            
+            <h3>Soft Skills</h3>
+            <ul>
+                <li><strong>Communication:</strong> Excellent written and verbal communication, including technical writing and presentations.</li>
+                <li><strong>Teamwork:</strong> Collaborative team player, experienced in Agile environments.</li>
+            </ul>
+    </section>
+    <section id="certificates" style="color: rgb(14, 120, 92)">
+        <h2>Certificates</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Certificate</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Artificial Intelligence with Python</td>
+                    <td>Great Learning</td>
+                </tr>
+                <tr>
+                    <td>Introduction to Artificial Intelligence</td>
+                    <td>Great Learning</td>
+                </tr>
+                <tr>
+                    <td>Elements of AI</td>
+                    <td>University of Helsinki</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div class="outer-container"> 
+        <div class="example" style="margin: 0; padding: 10px">
+        <h3>you can also reach out to me through these:</h3>
+        <ol>
+            <li><a href="https://www.linkedin.com/in/mahi-lohiya-7b1b3b1b3/">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/mahi_lohiyaa/?igsh=MXNlcXR5OXhldGU2OQ%3D%3D" style="display: block;">Instagram</a></li>
+        </ol>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+
 
